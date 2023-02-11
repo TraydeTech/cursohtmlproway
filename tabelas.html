@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body bgcolor="#d3d3d3">
+    <div></div><h1>Trabalhando com Tabelas em HTML </h1></div>
+    <hr color="#00F" size="12px" />
+
+    <table border="1" bgcolor="#FFF" width="100%">
+        <thead> <!-- cabecario da tabela -->
+            <tr>
+                <th bgcolor="#AAA" colspan="4">Estrutura de uma tebela</th> <!-- colspan mescla celulas da direita para esquerta-->
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" align="center" valign="middble"> <!-- rowspan mescla para baixo--><!-- valign para deixar onde eu quero no meu em cima-->
+                    <img src="Imagens/HTML.png" alt="HTML" width="50px" />
+                </td>
+                <td>Linha 1 / Coluna 2</td>
+                <td>Linha 1 / Coluna 3</td>
+                <td>Linha 1 / Coluna 4</td>
+            </tr>
+            <tr>
+                <td>Linha 2 / Coluna 2</td>
+                <td>Linha 2 / Coluna 3</td>
+                <td>Linha 2 / Coluna 4</td> 
+            </tr>
+            <tr align="center">
+                <td colspan="2">Linha 3 / Coluna 1</td> <!-- colspan mescla celulas da direita para esquerta-->
+                <td colspan="3">Linha 3 / Coluna 3</td> <!-- colspan mescla celulas da direita para esquerta-->
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">
+                    <table border="1" width="100%" heigth="100%"  bgcolor="#EE0">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Tabelas Internas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> linha 1 / coluna 1</td>
+                                <td> linha 1 / coluna 3</td>
+                            </tr>
+                            <tr>
+                                <td> linha 2 / coluna 1</td>
+                                <td> linha 2 / coluna 3</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" align="center"> Rodapé da Tabela Interna</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </td>
+                <td colspan="2" rowspan="2" align="left" valign="top">
+                    <ul>
+                        <li> Primeiro Item </li>
+                        <li> Segundo Item</li>
+                        <li> Terceiro Item</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td colspan="4" align="center">Para aprender mais sobre HTMl faça um curso na <a href="https://www.proway.com.br" target="_blank">Proway</a></td>
+            </tr>
+        </tbody><!-- Roda pé-->
+        <tfoot>
+            <td colspan="4">&nbsp;</td> <!-- colspan mescla celulas--> <!-- $nbsp; adicionar valor nulo-->
+        </tfoot>
+    </table>
+
+
+</body>
+</html>
