@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -8,24 +8,31 @@
     <title>Borussia Dortmund</title>
 </head>
 
-<body>
-    <table border="1" bgcolor="#000000" width="100%">
-        <thead>
-            <tr align="center" bgcolor="#000000">
+<body link="yellow" vlink="yellow">
+    <table border="1" bgcolor="#000000" width="100%"> <!--T ABELA -->
+
+        <!-- TR => LINHAS -->
+        <!-- TD => COLUNAS -->
+        <!-- TH => TITULOS DA TABELA -->
+        <!-- CABECARIO DA TABELA -->
+
+        <thead> <!-- CABECARIO -->
+            <tr align="center" bgcolor="#000000"><!--CELUCAS COLUNAS th E td-->
                 <td> <img src="Imagens/bvb.png" alt="THML" width="300px"></td>
                 <th colspan="4">
-                    <h1 align="center" style="color: yellow"> Borussia Dortmund</h1> 
+                    <h1 align="center" style="color: yellow"> <a href="https://www.bvb.de" target="_blank"> <font size="100px">Borussia Dortmund</font> </a></h1> 
+                    <!-- SIZE => TANHO DA FONTE -->
+                    <!-- FACE => ESCOLHER FONTE -->
                 </th>
             </tr>
             <tr>
                 <td colspan="5" bgcolor="#000000">
-                    &nbsp;
+                    &nbsp;<!-- CARACTER VAZIO -->
                 </td>
             </tr>
-
         </thead>
 
-        <tbody>
+        <tbody><!-- CORPO DA TABELA -->
             <tr bgcolor="#000000">
                 <td rowspan="2" style="color: yellow"><strong>Imaguração: </strong> 19/12/1909</td>
                 <td style="color: yellow"><strong>Estadio:</strong> Signal Iduna Park</td>
@@ -45,10 +52,15 @@
             </tr>
 
             <tr>
-                <td colspan="1" rowspan="4" bgcolor="#EE0"> <img src="Imagens/bvb1.webp" alt="THML" width="250px"> <img src="Imagens/bvb2.webp" alt="THML" width="250px"></td>
+                
+                <td colspan="2" rowspan="4" bgcolor="#EE0"> 
+                    <strong>Uniformes:</strong><br />
+                    <img src="Imagens/bvb1.webp" alt="THML" width="250px">
+                    <img src="Imagens/bvb2.webp" alt="THML" width="250px">
+                </td>
             </tr>
             <tr>
-                <td colspan="4" bgcolor="#EE0"><strong>Campeaonatos que disputa/disputou: </strong> <br> Liga dos Campeões da UEFA, Recopa Europeia da UEFA, Campeonato Alemão, Copa da Alemanha, Supercopa da Alemanha </td>
+                <td colspan="4" bgcolor="#EE0"> <strong>Campeaonatos que disputa/disputou: </strong> <br> Liga dos Campeões da UEFA, Recopa Europeia da UEFA, Campeonato Alemão, Copa da Alemanha, Supercopa da Alemanha </td>
             </tr>
             <td colspan="2">
                 <table border="1" width="100%" heigth="100%"  bgcolor="#EE0">
@@ -170,9 +182,9 @@
             </td>
             </td>
         </tbody>
-        <td colspan="5" rowspan="2" align="left" valign="top" style="color: yellow" bgcolor="#000000"><strong>Lista de Competições com Títulos:</strong>
+        <td colspan="5" align="left" valign="top" style="color: yellow" bgcolor="#000000"><strong>Lista de Competições com Títulos:</strong>
             
-            <ul>
+            <ul> <!-- LISTA SEM NUMERCAO -->
                 <li> 🏆 Liga dos Campeões da UEFA - 1 Título(s) - Temporada(s) - 1996–97</li>
                 <li> 🏆 Recopa Europeia da UEFA - 1 Título(s) - Temporada(s) - 1965–66</li>
                 <li> 🏆 Campeonato Alemão - 8 Título(s) - Temporada(s) - 1955–56, 1956–57, 1962–63, 1994–95, 1995–96, 2001–02, 2010–11 e 2011–12</li>
@@ -182,10 +194,10 @@
         </td>
         <thead>
             <tr>
-                <td colspan="5" align="center" style="color: yellow" bgcolor="#000000"> <strong> Hino Popular </strong> </td>
+                <td colspan="5" style="color: yellow" bgcolor="#000000"> <strong> Hino Popular </strong> </td>
             </tr>
             <tr>
-                <td colspan="5" align="center" style="color: yellow" bgcolor="#000000">
+                <td colspan="5" style="color: yellow" bgcolor="#000000">
                     Hino Oficial do Borussia Dortmund (ALM) <br>
 
                     Aqui em Dortmund é um fenômeno  <br>
@@ -215,9 +227,12 @@
 
                 </td>
             </tr>
-            <tr>
-                <td colspan="5" style="color: yellow" bgcolor="#000000">Jefferson Luiz Trayde, Curso de HTML, <a href="https://www.proway.com.br" target="_blank">Proway</a> Informática</td>
-            </tr>
+            <!-- RODA PE -->
+            <tfoot>
+                <tr>
+                    <td colspan="5" style="color: yellow" bgcolor="#000000">Jefferson Luiz Trayde, Curso de HTML, <a href="https://www.proway.com.br" target="_blank">Proway</a> Informática</td>
+                </tr>
+            </tfoot>
         </thead>
     </table>
 </body>
