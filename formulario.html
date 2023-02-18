@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+    <!-- MAXLENGTH O LIMITE DE CARECTERES -->
+    <!-- FOR CLIKANDO EM CIMA VAI PARA CAIXA PARA DEGITAR -->
+<body>
+    <div>
+        <h3>Cadastro de Pessoas</h3>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Informe os dados</legend>
+            <form action="" name="frmCadastro" method="post">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Prencha os campos abaixo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label for="txtNome">Nome: </label></td>
+                            <td>
+                                <input type="text" name="nome" id="txtNome" placeholder="Nome Completo" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="txtEmail">E-mail: </label></td>
+                            <td>
+                                <input required type="email" name="txtEmail" id="txtEmail" placeholder="usuario@provedor.com.br" maxlength="100">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="txtNascimento">Nascimento</label></td>
+                            <td>
+                                <input type="date" name="nascimento" id="txtNascimento">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="txtsexo">Sexo</label></td>
+                            <td>
+                                <input type="radio" name="sexo" id="txtSexoM" value="m" /><label for="txtSexoM">Masculino</label> 
+                                <input type="radio" name="sexo" id="txtSexoF" value="f" /><label for="txtSexoF">Feminino</label> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="txtRegiao">Região: </label></td>
+                            <td>
+                                <select name="regiao" id="txtRegiao">
+                                    <option value="0">Selecione</option>
+                                    <optgroup label="Sul">
+                                        <option value="rs">Rio Grande do Sul</option>
+                                        <option value="sc">Santa Catarina</option>
+                                        <option value="pr">Paraná</option>
+                                    </optgroup>
+                                    <optgroup label="nordeste">
+                                        <option value="ce">Ceará</option>
+                                        <option value="ba">Bahia</option>
+                                    </optgroup>
+                                    <optgroup label="sulDeste">
+                                        <option value="sp">São Paulo</option>
+                                        <option value="rj">Rio de Janeiro</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="txtItns">Itens</label></td>
+                            <td>
+                                <input type="checkbox" name="tv" id="tv"><label for="tv">TV</label> 
+                                <input type="checkbox" name="micro" id="micro"><label for="micro">Microondas</label> 
+                                <input type="checkbox" name="geladeira" id="geladeira"><label for="geladeira">Geladeira</label> 
+                                <input type="checkbox" name="carro" id="carro"><label for="carro">Carro</label> 
+                                <input type="checkbox" name="moto" id="moto"><label for="moto">Moto</label> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="txtSenha">Senha:</label></td>
+                            <td>
+                                <input type="password" name="senha" id="txtSenha">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="foto">Foto:</label></td>
+                            <td>
+                                <input type="file" name="foto" id="foto">
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="Cadastrar"/>
+                                <input type="submit" value="Cancelar"/>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
+        </fieldset>
+    </div>
+    
+ 
+    
+</body>
+</html>
