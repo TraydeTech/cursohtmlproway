@@ -7,15 +7,15 @@
     <title>Atividade de Formulario</title>
 </head>
 <body>
-    <div align="center"><h3>Cadastro de Pessoas</h3></div>
-
+    <div align="center"><h3>Cadastro para Habilitação</h3></div>
     <fieldset>
-        <legend>Informe os dados</legend>
-        <table width="70%">
+        <legend>Prencha os campos abaixo</legend>
+        <table width="100%" bgcolor="#FFDAB9">
             <thead>
                 <tr>
-                    <th colspan="2">Prencha os campos abaixo</th>
+                    <th></th>
                 </tr>
+            </thead>
                 <tbody>
                     <tr>
                         <td><label for="txtNome">Nome Completo: </label></td>
@@ -34,11 +34,11 @@
                         </td>
                         <td><label for="txtidade">Idade</label></td>
                         <td>
-                            <input type="number" idade="idade" id="txtIdade" required>
+                            <input type="text" idade="idade" id="txtIdade" required>
                         </td>
                     </tr>
                     <tr>
-                         <td><label for="txtsexo">Sexo</label></td>
+                         <td><label for="txtSexo">Sexo</label></td>
                             <td>
                                 <input type="radio" name="sexo" id="txtSexoM" value="m" /><label for="txtSexoM">Masculino</label> 
                                 <input type="radio" name="sexo" id="txtSexoF" value="f" /><label for="txtSexoF">Feminino</label> 
@@ -49,23 +49,23 @@
                             </td>
                     </tr>
                     <tr>
-                        <td><label for="txtendereco">Endereço: </label></td>
+                        <td><label for="txtEndereco">Endereço: </label></td>
                         <td>
                             <input type="text" endereco="endereco" id="txtEndereco" required>
                         </td>
-                        <td><label for="txtcomplemento">Complemento: </label></td>
+                        <td><label for="txtComplemento">Complemento: </label></td>
                         <td>
                             <input type="text" complemento="complemento" id="txtcomplemento" required>
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="txtcidade">Cidade: </label></td>
+                        <td><label for="txtCidade">Cidade: </label></td>
                         <td>
-                            <input type="text" cidade="cidade" id="cidade" required>
+                            <input type="text" cidade="cidade" id="txtcidade" required>
                         </td>
-                        <td><label for="txtbairro">Bairro: </label></td>
+                        <td><label for="txtBairro">Bairro: </label></td>
                         <td>
-                            <input type="text" bairro="bairro" id="bairro" required>
+                            <input type="text" bairro="bairro" id="txtbairro" required>
                         </td>
                     </tr>
                     <tr>
@@ -75,7 +75,7 @@
                         </td>
                         <td><label for="txtTelefone">Telefone: </label></td>
                         <td>
-                            <input type="number" telefone="telefone" id="telefone" required>
+                            <input type="text" telefone="telefone" id="txttelefone" required>
                         </td>
                     </tr>
                     <tr>
@@ -112,18 +112,23 @@
                                 </optgroup>
                             </select>
                         </td>
-                    </tr>
-                    <tr>
-                        <td><label for="txtCatecoria">Meio de Pagamento</label></td>
+                        <td><label for="txtCatecoria">Categoria</label></td>
                         <td>
-                            <input type="radio" name="avista" id="txtAvistaA" value="A" /><label for="txtAvistaA">À vista</label> 
-                            <input type="radio" name="avista" id="txtParceladoP" value="P" /><label for="txtParceladoP">Parcelado</label> 
+                            <input type="radio" name="categoria" id="txtCarroB" value="B" /><label for="txtCarroB">Carro (B)</label> 
+                            <input type="radio" name="categoria" id="txtMotoA" value="A" /><label for="txtMotoA">Moto (A)</label> 
+                            <input type="radio" name="categoria" id="txtCarroMotoBA" value="BA" /><label for="txtCarroMotoBA">Carro e Moto (B-A)</label>
                         </td>
                     </tr>
                 </tbody>
-            </thead>
+            <tfoot align="center">
+                <tr>
+                    <td colspan="8">
+                        <input type="submit" value="Cadastrar"/>
+                        <input type="submit" value="Cancelar"/>
+                    </td>
+                </tr>
+            </tfoot>
         </table>
     </fieldset>
-    
 </body>
 </html>
