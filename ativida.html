@@ -19,76 +19,76 @@
             </thead>
                 <tbody>
                     <tr>
-                        <td><label for="txtNome">Nome Completo: </label></td>
+                        <td><label for="txtNome">Nome Completo:(*) </label></td>
                         <td>
                             <input type="text" name="nome" id="txtNome" placeholder="Nome Completo" required>
                         </td>
-                        <td><label for="txtCpf">CPF: </label></td>
+                        <td><label for="txtCpf">CPF:(*) </label></td>
                         <td>
                             <input type="text" cpf="cpf" id="txtCpf" placeholder="Cpf" required>
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="txtNascimento">Nascimento</label></td>
+                        <td><label for="txtNascimento">Nascimento:(*) </label></td>
                         <td>
                             <input type="date" name="nascimento" id="txtNascimento" required>
                         </td>
-                        <td><label for="txtidade">Idade</label></td>
+                        <td><label for="txtidade">Idade:(*) </label></td>
                         <td>
-                            <input type="text" idade="idade" id="txtIdade" required>
+                            <input type="text" name="idade" id="txtidade" required>
                         </td>
                     </tr>
                     <tr>
-                         <td><label for="txtSexo">Sexo</label></td>
+                         <td><label for="txtSexo">Sexo:(*) </label></td>
                             <td>
                                 <input type="radio" name="sexo" id="txtSexoM" value="m" /><label for="txtSexoM">Masculino</label> 
                                 <input type="radio" name="sexo" id="txtSexoF" value="f" /><label for="txtSexoF">Feminino</label> 
                             </td>
-                        <td><label for="txtEmail">E-mail: </label></td>
+                        <td><label for="txtEmail">E-mail:(*) </label></td>
                             <td>
                                 <input required type="email" name="txtEmail" id="txtEmail" placeholder="usuario@provedor.com.br" maxlength="100">
                             </td>
                     </tr>
                     <tr>
-                        <td><label for="txtEndereco">Endereço: </label></td>
+                        <td><label for="txtEndereco">Endereço:(*) </label></td>
                         <td>
                             <input type="text" endereco="endereco" id="txtEndereco" required>
                         </td>
-                        <td><label for="txtComplemento">Complemento: </label></td>
+                        <td><label for="txtComplemento">Complemento:(*) </label></td>
                         <td>
-                            <input type="text" complemento="complemento" id="txtcomplemento" required>
+                            <input type="text" complemento="Complemento" id="txtComplemento" required>
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="txtCidade">Cidade: </label></td>
+                        <td><label for="txtCidade">Cidade:(*) </label></td>
                         <td>
-                            <input type="text" cidade="cidade" id="txtcidade" required>
+                            <input type="text" cidade="Cidade" id="txtCidade" required>
                         </td>
-                        <td><label for="txtBairro">Bairro: </label></td>
+                        <td><label for="txtBairro">Bairro:(*) </label></td>
                         <td>
-                            <input type="text" bairro="bairro" id="txtbairro" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="txtEmail">E-mail: </label></td>
-                        <td>
-                            <input required type="email" name="txtEmail" id="txtEmail" placeholder="usuario@provedor.com.br" maxlength="100">
-                        </td>
-                        <td><label for="txtTelefone">Telefone: </label></td>
-                        <td>
-                            <input type="text" telefone="telefone" id="txttelefone" required>
+                            <input type="text" bairro="Bairro" id="txtBairro" required>
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="txtMeioPagamento">Meio de Pagamento</label></td>
+                        <td><label for="txtNumCelular">Num. do Celular:(*) </label></td>
+                        <td>
+                            <input type="text" celualar="NumCelular" id="txtNumCelular" required>
+                        </td>
+                        <td><label for="txtTelComercial">Telefone Comercial: </label></td>
+                        <td>
+                            <input type="text" comercial="TelComercial" id="txtTelComercial">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtMeioPagamento">Meio de Pagamento:(*) </label></td>
                         <td>
                             <input type="radio" name="avista" id="txtAvistaA" value="A" /><label for="txtAvistaA">À vista</label> 
                             <input type="radio" name="avista" id="txtParceladoP" value="P" /><label for="txtParceladoP">Parcelado</label> 
                         </td>
-                        <td><label for="txtValor">Valor R$: </label></td>
+                        <td><label for="txtValor">Valor R$:(*) </label></td>
                         <td>
                             <select name="txtValor" id="txtValor">
-                                <option value="0">Selecione</option>
+                                <option value="0">Selecione:</option>
                                 <optgroup label="Àvista">
                                     <option value="b">Boleto R$ 1.500,00</option>
                                     <option value="pix">Pix R$ 1.500,00</option>
@@ -102,7 +102,7 @@
                             </select>
                         </td>
                     </tr>
-                        <td><label for="txtServico">Serviços: </label></td>
+                        <td><label for="txtServico">Serviços:(*) </label></td>
                         <td>
                             <select name="txtServico" id="txtServico">
                                 <option value="0">Serviço</option>
@@ -113,7 +113,7 @@
                                 </optgroup>
                             </select>
                         </td>
-                        <td><label for="txtCatecoria">Categoria</label></td>
+                        <td><label for="txtCatecoria">Categoria:(*) </label></td>
                         <td>
                             <input type="radio" name="categoria" id="txtCarroB" value="B" /><label for="txtCarroB">Carro (B)</label> 
                             <input type="radio" name="categoria" id="txtMotoA" value="A" /><label for="txtMotoA">Moto (A)</label> 
