@@ -1,0 +1,11 @@
+
+<table border="1" colpan="2" rowpan="6"><!-- colspan mescla celulas da direita para esquerta-->
+        <thead>
+            <tr>
+                <th><h1>Auto Escola</h1></th> 
+                <th><h1>Velozer e Furiosos</h1></th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot></tfoot>
+    </table>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de Formulario</title>
+</head>
+<body>
+    <div align="center"><h3>Cadastro de Pessoas</h3></div>
+
+    <fieldset>
+        <legend>Informe os dados</legend>
+        <table width="70%">
+            <thead>
+                <tr>
+                    <th colspan="2">Prencha os campos abaixo</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td><label for="txtNome">Nome Completo: </label></td>
+                        <td>
+                            <input type="text" name="nome" id="txtNome" placeholder="Nome Completo" required>
+                        </td>
+                        <td><label for="txtCpf">CPF: </label></td>
+                        <td>
+                            <input type="text" cpf="cpf" id="txtCpf" placeholder="Cpf" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtNascimento">Nascimento</label></td>
+                        <td>
+                            <input type="date" name="nascimento" id="txtNascimento" required>
+                        </td>
+                        <td><label for="txtidade">Idade</label></td>
+                        <td>
+                            <input type="number" idade="idade" id="txtIdade" required>
+                        </td>
+                    </tr>
+                    <tr>
+                         <td><label for="txtsexo">Sexo</label></td>
+                            <td>
+                                <input type="radio" name="sexo" id="txtSexoM" value="m" /><label for="txtSexoM">Masculino</label> 
+                                <input type="radio" name="sexo" id="txtSexoF" value="f" /><label for="txtSexoF">Feminino</label> 
+                            </td>
+                        <td><label for="txtEmail">E-mail: </label></td>
+                            <td>
+                                <input required type="email" name="txtEmail" id="txtEmail" placeholder="usuario@provedor.com.br" maxlength="100">
+                            </td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtendereco">Endereço: </label></td>
+                        <td>
+                            <input type="text" endereco="endereco" id="txtEndereco" required>
+                        </td>
+                        <td><label for="txtcomplemento">Complemento: </label></td>
+                        <td>
+                            <input type="text" complemento="complemento" id="txtcomplemento" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtcidade">Cidade: </label></td>
+                        <td>
+                            <input type="text" cidade="cidade" id="cidade" required>
+                        </td>
+                        <td><label for="txtbairro">Bairro: </label></td>
+                        <td>
+                            <input type="text" bairro="bairro" id="bairro" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtEmail">E-mail: </label></td>
+                        <td>
+                            <input required type="email" name="txtEmail" id="txtEmail" placeholder="usuario@provedor.com.br" maxlength="100">
+                        </td>
+                        <td><label for="txtTelefone">Telefone: </label></td>
+                        <td>
+                            <input type="number" telefone="telefone" id="telefone" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtMeioPagamento">Meio de Pagamento</label></td>
+                        <td>
+                            <input type="radio" name="avista" id="txtAvistaA" value="A" /><label for="txtAvistaA">À vista</label> 
+                            <input type="radio" name="avista" id="txtParceladoP" value="P" /><label for="txtParceladoP">Parcelado</label> 
+                        </td>
+                        <td><label for="txtValor">Valor R$: </label></td>
+                        <td>
+                            <select name="txtValor" id="txtValor">
+                                <option value="0">Selecione</option>
+                                <optgroup label="Àvista">
+                                    <option value="b">Boleto R$ 1.500,00</option>
+                                    <option value="pix">Pix R$ 1.500,00</option>
+                                    <option value="a">À vista R$ 1.500,00</option>
+                                </optgroup>
+                                <optgroup label="Parcelado">
+                                    <option value="2x">2x R$ 750,00</option>
+                                    <option value="3x">3x R$ 500,00</option>
+                                    <option value="4x">4x R$ 375,00</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                        <td><label for="txtServico">Serviços: </label></td>
+                        <td>
+                            <select name="txtServico" id="txtServico">
+                                <option value="0">Serviço</option>
+                                <optgroup label="Servico">
+                                <option value="a">Primeira Habilitação</option>
+                                <option value="b">Renovação</option>
+                                <option value="c">Adição de Cateira</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtCatecoria">Meio de Pagamento</label></td>
+                        <td>
+                            <input type="radio" name="avista" id="txtAvistaA" value="A" /><label for="txtAvistaA">À vista</label> 
+                            <input type="radio" name="avista" id="txtParceladoP" value="P" /><label for="txtParceladoP">Parcelado</label> 
+                        </td>
+                    </tr>
+                </tbody>
+            </thead>
+        </table>
+    </fieldset>
+    
+</body>
+</html>
